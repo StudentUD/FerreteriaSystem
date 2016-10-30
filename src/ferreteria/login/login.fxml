@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ferreteria.login.LoginController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblUser" text="Usuario" />
+            <TextField fx:id="txtUser" promptText="Usuario"/>
+            <Label fx:id="lblPasword" text="Contraseña" />
+            <PasswordField fx:id="txtPassword" promptText="Contraseña" />
+            <ProgressIndicator fx:id="progressLogin" progress="0.0" />
+            <Button fx:id="btnLogin" contentDisplay="CENTER" mnemonicParsing="Ingresa al sistema" onAction="#login" text="Ingresar" textAlignment="CENTER" />
+            <Label fx:id="lblStatus" text="Estado: Desconectado" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
